@@ -4,14 +4,14 @@
 - If you used/have been provisioned an Apple silicon based work machine, chances are that it would be managed with jamf.
 - I guess the reason you might be reading would be:
   - you received the machine but it wasn't setup properly (you can't see any of your org's apps/certs installed e.g. missing `self service` etc).
-  - you have been advised/tried resetting the machine (in hoping that it'd trigger the remote management setup process during initial setup but failed everytime).
+  - you have been advised/tried resetting the machine (in hoping that it'd trigger the remote management setup process during initial setup but fails everytime).
   - your IT support told you to run `sudo profiles renew -type enrollment` but it doesn't do anything.
   - after 2 hours and 5 transfers on the phone, your IT support left you to your own devices
 
 ## Workaround
 
 - So there is a way round this by manully enrolling on jamf and you *don't need to reset the machine*.
-- what you need to do is to ask your mate (who has a working machine) to check the server name on their machine:
+- what you need to do is to ask your mate (who has a working machine) to check the jamf server name on their machine:
   - you could easily find these on existing certs
   - e.g. check `MDM Profile` in `System Preferences > Profiles`
     - it tells you about the jamfcloud server address <- **This is what you'd need**

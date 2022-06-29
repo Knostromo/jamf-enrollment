@@ -37,9 +37,9 @@
 
 - to manually trigger the device enrollment process;
   - open `Terminal`
-  - run these commands (with your local acct password)
-    - sudo profiles renew -type enrollment
-    - sudo jamf policy
+  - run these commands (with your local root acct password)
+    - `sudo profiles renew -type enrollment`
+    - `sudo jamf policy`
   - you should see start the process of enrolling your machine/installing all corporate apps
  - enjoy your newly locked down machine :-)
 
